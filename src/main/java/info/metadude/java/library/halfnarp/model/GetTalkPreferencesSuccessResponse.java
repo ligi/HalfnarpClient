@@ -16,8 +16,6 @@ public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesRespons
 
     @JsonProperty("talk_ids")
     private List<Integer> talkIds = new ArrayList<Integer>();
-    @JsonProperty("uid")
-    private String uid;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -35,22 +33,6 @@ public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesRespons
     @JsonProperty("talk_ids")
     public void setTalkIds(List<Integer> talkIds) {
         this.talkIds = talkIds;
-    }
-
-    /**
-     * @return The uid
-     */
-    @JsonProperty("uid")
-    public String getUid() {
-        return uid;
-    }
-
-    /**
-     * @param uid The uid
-     */
-    @JsonProperty("uid")
-    public void setUid(String uid) {
-        this.uid = uid;
     }
 
     @JsonAnyGetter
